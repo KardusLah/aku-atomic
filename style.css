@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-top: 70px;
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+.logo{
+    border-radius: 50%;
+    width: 305px;
+    height: 305px;
+    position: absolute;
+    background-color: #e0b4b6;
+    border: 7px solid white;
+    margin-top: -50PX;
+    margin-left: -55px;
+}
+.logo > img{
+    border-radius: 50%;
+    width: 305px;
+    height: 305px;
+}
+.akari{
+    width: 100px;
+    height: 305px;
+    position: absolute;
+    margin-top: -100PX;
+    margin-left: -55px;
+}
+.akari > img{
+    border-radius: 50%;
+    width: 500px;
+    height: 305px;
+}
+.menu{
+    text-align: right;
+    width: 800px;
+    height: 65px;
+    background-color: rgb(191, 121, 120);
+    margin: 0;
+    border-bottom: 8px solid white;
+}
+
+a{
+    text-decoration: none;
+}
+.menu>ol{
+    list-style-type: none;
+    display: inline;
+}
+.menu ol li{
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: #ffe2fa;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 11px 10px;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+.menu ol li:hover{
+    color: #9b3456;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+.header{
+    width: 800px;
+    height: 150px;
+    background-color: #84575e;
+    border-bottom: 8px solid white;
+    position: right;
+}
+.header .judul{
+    font-size: 3.0em;
+    color: #ffe2fa;
+    text-align: right;
+    padding: 45px 20px;
+}
+.nav{
+    width: 200px;
+    height: 858px;
+    background-color: #cf888b;
+    float: left;
+    border-right: 10px solid white;
+}
+.nav .judul{
+    background-color: #84575e;
+    height: 30px;
+    color: #ffe2fa;
+    font-size: 1.3em;
+    padding-top: 200px;
+    padding-left: 45px;
+    font-weight: bold;
+}
+.nav ul{
+    list-style-type: none;
+    font-size: 1.2em;
+}
+.nav ul li a{
+    display: inline-block;
+    color: #ffe2fa;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+.nav ul li a:hover{
+    color: #9b3456;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+.image{
+    width: 600px;
+    height: 195px;
+    background-color: #e2dfd4;
+    border: 1px solid white;
+    position: center;
+    text-align: left;
+    margin-left: 85px;
+}
+.slideshow{
+    padding-top: 0px;
+    width: 380px;
+    height: 245px ;
+    top: 63%;
+    left: 31.6%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    animation: slide 15s infinite;
+}
+.slide>img{
+    width: 100%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    50%{
+        transform: translateX(-300%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    90%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    } 
+}
+.iklan{
+    width: 200px;
+    height: 700px;
+    background-color: #cf888b;
+    float: right;
+    border-left: 10px solid white;
+    color: #ffe2fa;
+}
+.iklan-teks{
+    background-color: #84575e;
+    text-align: center;
+    color: #ffe2fa;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.konten{
+    width: 600px;
+    height: 476px;
+    background-color: #e0b4b6;
+    color: white;
+}
+.card-title{
+    font-size: 1.3em;
+    text-align: left;
+    color: #9b3456;
+    margin-bottom: 10px;
+}
+.card-body{
+    padding: 5px;
+    color: #9b3456;
+    text-align: justify;
+}
+.card-body::first-letter{
+    font-size: 72px;
+    font-family: Georgia;
+    line-height: 73px;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+.card-footer{
+    height: 20px;
+    background-color: #9b3456;
+    font-size: .8em;
+    color: white;
+    padding: 5px 5px;
+    text-align: right;
+}
+.card-footer a{
+    color: white;
+    text-decoration: underline;
+    font-size: italic;
+}
+.footer{
+    width: 800px;
+    height: 50px;
+    background-color: #84575e;
+    border-top: 9px solid white;
+}
+footer{
+    color: #e0b4b6;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 10px;
+}
