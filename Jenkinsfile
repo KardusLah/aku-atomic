@@ -9,10 +9,7 @@ pipeline {
 
     stage('Checkout') {
         steps {
-            checkout([$class: 'GitSCM',
-                branches: [[name: '*/master']],
-                userRemoteConfigs: [[url: 'https://github.com/KardusLah/aku-atomic.git']]
-            ])
+            checkout scm
         }
     }
 
