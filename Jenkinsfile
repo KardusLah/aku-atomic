@@ -7,11 +7,13 @@ pipeline {
         HOST_PORT = "6969"
     }
 
-    stage('Checkout') {
-        steps {
-            checkout scm
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'master',
+                    url: 'https://github.com/KardusLah/aku-atomic.git'
+            }
         }
-    }
 
         stage('Build Docker Image') {
             steps {
