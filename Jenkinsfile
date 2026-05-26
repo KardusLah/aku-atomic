@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    docker build -t $DOCKER_IMAGE .
+                    sudo docker build -t $DOCKER_IMAGE .
                     """
                 }
             }
@@ -30,12 +30,12 @@ pipeline {
                 script {
                     // Stop container lama kalau ada
                     sh """
-                    docker rm -f $CONTAINER_NAME || true
+                    sudo docker rm -f $CONTAINER_NAME || true
                     """
 
                     // Jalankan container baru dengan mapping port 6969 -> 80
                     sh """
-                    docker run -d --name $CONTAINER_NAME -p $HOST_PORT:80 $DOCKER_IMAGE
+                    sudo docker run -d --name $CONTAINER_NAME -p $HOST_PORT:80 $DOCKER_IMAGE
                     """
                 }
             }
